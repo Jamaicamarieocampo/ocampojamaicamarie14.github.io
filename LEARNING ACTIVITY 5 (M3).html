@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>forms</title>
+</head>
+<style>
+        body {
+            font-family: Verdana;
+        }
+        form {
+            padding: 30px 20px;
+        }
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+        }
+    </style>
+<body>
+ <form action="/action_page.php" method="post">
+ <fieldset>
+<table>
+<tr>
+ <td align="right"> <label for="name"> Name: </label></td>
+ <td><input type="text" id="name" name="name"><br></td>
+ </tr>
+ <tr>
+   <td align="right"><lablel for="email"> Email: </td>
+ <td> <input type="text" id="email" name="email"><br></td>
+ </tr>
+ <tr>
+   <td align="right"><label for="address"> Address:</td>
+  <td> <textarea id="address" name="address" rows="3" cols="21" style="overflow-y:scroll;"></textarea> <br></td>
+ </tr>
+ <tr>
+   <td align="right"> <label for="postcode">Postcode: </label></td>
+   <td> <input type="text" id="postcode" name="postcode"><br></td>
+ </tr>
+</table>
+
+<table border="1">
+ <tr><b>
+    <th>Product</th>
+    <th>Part Number</th>
+    <th>Quantity</th>
+    <th>Unit Price</th>
+    <th>Subtotal</th>
+  </b>
+  </tr>
+  <tr>
+   	<td>Econo Box</td>
+	<td>LB100</td>
+	<td></label><input type="text" id="quantity" name="quantity"></td>
+	<td>R5</td>
+	<td><input type="text" id="subtotal" name="subtotal"></td>
+ </tr>
+ <tr>
+   	<td>Standard Box</td>
+	 <td>LB200</td>
+	<td><input type="text" id="quantity" name="quantity"> </td>
+	<td>R10</td>
+	<td><input type="text" id="subtotal" name="subtotal"></td>
+ </tr>
+ <tr>
+	<td>Premium Box/ TD></td>	
+	 <td>LB300</td>
+	<td><input type="text" id="quantity" name="quantity"> </td>
+	<td>R15</td>
+	<td><input type="text" id="subtotal" name="subtotal"></td>
+ </tr>
+ <tr>
+	<td>Deluxe Box/ TD></td>
+	 <td>LB400</td>
+	<td><input type="text" id="quantity" name="quantity"> </td>
+	<td>R20</td>
+	<td><input type="text" id="subtotal" name="subtotal"></td>
+ </tr>
+ <tr>
+	<td>Super Deluxe Box/ TD></td>
+	 <td>LB500</td>	
+	<td><input type="text" id="quantity" name="quantity"> </td>
+	<td>R30</td>
+	<td><input type="text" id="subtotal" name="subtotal"></td>
+ </tr>
+ <tr>
+	<td align="right"; colspan="4"> Total </td>
+	<td><input type="text" id="total" name="total"></td>
+ </tr>
+</table>
+</body><br><br>
+
+
+
+<p><b>Credit Card Details</b></p>
+<p> Card Type </p>
+  <input type="radio" id="MasterCard" name="fav_language" value="MasterCard">
+  <label for="MasterCard">MasterCard</label> &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; <label for="Card Number">Card Number:</label><input type="text" id="Card Number" name="Card Number"><br>
+  <input type="radio" id="Visa" name="fav_language" value="Visa">
+  <label for="Visa">Visa</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="Expiry Date">Expiry Date:</label> <input type="text" id="Expiry Date" name="Expiry Date"> <br>
+  <input type="radio" id="American Express" name="fav_language" value="American Express">    
+  <label for="American Express">American Express</label> <br>
+  <input type="radio"  id="Diners Club" name="fav_language" value="Diners Club">
+  <label for="Diners Club">Diners Club</label> <br><br><br>
+
+
+<table>
+ <tr>
+  <td align="right"><label for="delivery address"><b> Delivery Address:</b></label></td>
+  <td> <textarea id="delivery address" name="delivery address" rows="3" cols="21" style="overflow-y:scroll;"></textarea> <br></td>
+ </tr>
+</table><br><br>
+
+
+  <input type="button" onclick="myFunction()" value="Send order">
+  <input type="reset" onclick="myFunction()" value="Clear form">
+</form>
+
+<p align="center"><a href="cssactivities.html" class="btn btn-primary">Back</a></p>
+</body>
+</html>
